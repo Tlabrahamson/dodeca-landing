@@ -14,6 +14,7 @@ const HeroWrapper = styled.section`
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: -1;
   }
 
@@ -23,7 +24,6 @@ const HeroWrapper = styled.section`
 
     h1 {
       font-weight: 800;
-      line-height: 70px;
       color: #fefefe;
     }
 
@@ -58,8 +58,41 @@ const HeroWrapper = styled.section`
   }
 
   .person {
-    width: 100%;
     max-width: 560px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1366px) {
+    margin-top: 60px;
+
+    article {
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 20px 0;
+      }
+    }
+
+    .person {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    flex-direction: column;
+
+    article {
+      width: 100%;
+
+      h1 {
+        line-height: 40px;
+      }
+    }
+
+    .person {
+      width: 80%;
+    }
   }
 `;
 
