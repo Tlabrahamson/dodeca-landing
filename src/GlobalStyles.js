@@ -8,6 +8,16 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 
+  body {
+    padding: 0 16rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #283533;
+  }
+
   h1 {
       font-size: 64px;
   }
