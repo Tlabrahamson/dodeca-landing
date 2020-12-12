@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // Images
 import planet from "../assets/planet.png";
+import gradient from "../assets/planet-gradient.png";
 
 const PlanetWrapper = styled.section`
   display: flex;
@@ -33,7 +34,7 @@ const PlanetWrapper = styled.section`
     }
   }
 
-  img {
+  .planet {
     width: 100%;
     max-width: 672px;
   }
@@ -42,6 +43,11 @@ const PlanetWrapper = styled.section`
 export default function Planet() {
   return (
     <PlanetWrapper>
+      <img
+        className="gradient-background"
+        src={gradient}
+        alt="Gradient background"
+      />
       <div>
         <h2>Lorem ipsum</h2>
         <article>
@@ -65,7 +71,7 @@ export default function Planet() {
           </p>
         </article>
       </div>
-      <img src={planet} alt="A 3D planet with trees." />
+      <img className="planet" src={planet} alt="A 3D planet with trees." />
     </PlanetWrapper>
   );
 }
