@@ -3,9 +3,10 @@ import styled from "styled-components";
 const FeaturesWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
   position: relative;
   margin-top: 16rem;
-  justify-items: center;
+  justify-items: space-between;
 
   article {
     width: 368px;
@@ -26,6 +27,15 @@ const FeaturesWrapper = styled.section`
       line-height: 30px;
       color: #333;
     }
+  }
+
+  @media screen and (max-width: 1366px) {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `;
 
