@@ -3,6 +3,7 @@ import GlobalStyles from "./GlobalStyles";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import Planet from "./components/Planet";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Planet />
     </>
   );
 }
