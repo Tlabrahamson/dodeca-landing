@@ -19,7 +19,7 @@ const HeroWrapper = styled.section`
   }
 
   article {
-    width: 762px;
+    min-width: 762px;
     margin-top: 61px;
 
     h1 {
@@ -58,7 +58,6 @@ const HeroWrapper = styled.section`
   }
 
   .person {
-    max-width: 560px;
     width: 100%;
   }
 
@@ -70,6 +69,7 @@ const HeroWrapper = styled.section`
     }
 
     article {
+      min-width: 600px;
       p {
         font-size: 16px;
         line-height: 30px;
@@ -87,7 +87,7 @@ const HeroWrapper = styled.section`
     flex-direction: column;
 
     article {
-      width: 100%;
+      min-width: 100%;
 
       h1 {
         line-height: 40px;

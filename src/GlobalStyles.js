@@ -9,7 +9,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    padding: 0 16rem;
     overflow-x: hidden;
 
   }
@@ -42,10 +41,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media screen and (max-width: 1366px) {
-    body {
-      padding: 0 8rem;
-    }
-
     h1 {
       font-size: 48px;
       line-height: 56px;
@@ -65,9 +60,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media screen and (max-width: 768px) {
-    body {
-      padding: 0 2rem;
-    }
 
     h1 {
       font-size: 32px;
@@ -84,9 +76,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media screen and (max-width: 480px) {
-    body {
-      padding: 0 1rem;
-    }
   }
   `;
 
