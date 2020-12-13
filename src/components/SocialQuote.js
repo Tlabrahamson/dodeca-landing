@@ -27,6 +27,18 @@ const SocialQuoteWrapper = styled.section`
       color: #f1f1f1;
     }
   }
+
+  @media screen and (max-width: 1366px) {
+    article {
+      width: 697px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    article {
+      width: 393px;
+    }
+  }
 `;
 
 export default function SocialQuote() {

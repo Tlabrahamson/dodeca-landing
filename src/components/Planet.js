@@ -38,6 +38,10 @@ const PlanetWrapper = styled.section`
     width: 100%;
     max-width: 672px;
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export default function Planet() {
