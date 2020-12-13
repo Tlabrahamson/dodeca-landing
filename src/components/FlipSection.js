@@ -13,6 +13,11 @@ const FlipSectionWrapper = styled.section`
     justify-content: space-between;
     margin-bottom: 8rem;
 
+    img {
+      width: 100%;
+      max-width: 700px;
+    }
+
     h2 {
       padding: 1rem 0;
       line-height: 56px;
@@ -32,6 +37,28 @@ const FlipSectionWrapper = styled.section`
 
   .reverse-article {
     flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 1366px) {
+    article {
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    article {
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .reverse-article {
+      flex-direction: column;
+    }
   }
 `;
 

@@ -6,7 +6,6 @@ const FeaturesWrapper = styled.section`
   grid-gap: 4rem;
   position: relative;
   margin-top: 16rem;
-  justify-items: space-between;
 
   article {
     width: 368px;
@@ -31,11 +30,14 @@ const FeaturesWrapper = styled.section`
 
   @media screen and (max-width: 1366px) {
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    article {
+      width: 100%:
+    }
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 `;
 

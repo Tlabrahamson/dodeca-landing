@@ -65,6 +65,10 @@ const HeroWrapper = styled.section`
   @media screen and (max-width: 1366px) {
     margin-top: 60px;
 
+    .hero-gradient {
+      height: 600px;
+    }
+
     article {
       p {
         font-size: 16px;
