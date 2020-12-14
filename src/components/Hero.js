@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import gradient from "../assets/hero-gradient.png";
 import person from "../assets/hero-person.png";
 
 const HeroWrapper = styled.section`
@@ -13,8 +12,6 @@ const HeroWrapper = styled.section`
     position: absolute;
     top: 0;
     left: 0;
-    height: 800px;
-    width: 100%;
     z-index: -1;
   }
 
@@ -62,12 +59,6 @@ const HeroWrapper = styled.section`
   }
 
   @media screen and (max-width: 1366px) {
-    margin-top: 60px;
-
-    .hero-gradient {
-      height: 600px;
-    }
-
     article {
       min-width: 600px;
       p {
@@ -83,7 +74,7 @@ const HeroWrapper = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: 0;
+    margin-top: 60px;
     flex-direction: column;
 
     article {
@@ -95,6 +86,7 @@ const HeroWrapper = styled.section`
     }
 
     .person {
+      margin-top: 60px;
       width: 80%;
     }
   }
@@ -103,11 +95,34 @@ const HeroWrapper = styled.section`
 export default function Hero() {
   return (
     <HeroWrapper>
-      <img
+      <svg
+        width="1920"
+        height="800"
+        viewBox="0 0 1920 800"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
         className="hero-gradient"
-        src={gradient}
-        alt="Gradient for the hero background."
-      />
+      >
+        <path
+          d="M0 0H1920V538.511C1390.03 697.971 955.637 751.57 0 800V0Z"
+          fill="url(#paint0_linear)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="845"
+            y1="-280"
+            x2="2037.02"
+            y2="408.443"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#2A1DCA" stop-opacity="0.75" />
+            <stop offset="0.291667" stop-color="#1D4DCA" stop-opacity="0.75" />
+            <stop offset="1" stop-color="#1DCAAB" stop-opacity="0.75" />
+          </linearGradient>
+        </defs>
+      </svg>
+
       <article>
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
         <p>
