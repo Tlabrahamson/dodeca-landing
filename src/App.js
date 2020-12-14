@@ -9,7 +9,7 @@ import Features from "./components/Features";
 import Planet from "./components/Planet";
 import FlipSection from "./components/FlipSection";
 import SocialQuote from "./components/SocialQuote";
-
+import CardSection from "./components/CardSection";
 import Footer from "./components/Footer";
 
 AOS.init();
@@ -38,6 +38,7 @@ function App() {
         <Planet />
         <FlipSection />
         <SocialQuote />
+        <CardSection />
         <Footer />
       </AppWrapper>
     </>

@@ -82,6 +82,7 @@ const FooterWrapper = styled.section`
     svg {
       font-size: 24px;
       margin-left: 42px;
+      cursor: pointer;
     }
   }
 
@@ -97,6 +98,23 @@ const FooterWrapper = styled.section`
       }
       input {
         margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    footer {
+      flex-direction: column;
+
+      div {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+      }
+
+      svg {
+        margin: 0;
       }
     }
   }
