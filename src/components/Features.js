@@ -44,7 +44,7 @@ const FeaturesWrapper = styled.section`
 export default function Features() {
   return (
     <FeaturesWrapper>
-      <article>
+      <article data-aos="fade-up">
         <div className="icon-placeholder"></div>
         <h3>Lorem ipsum</h3>
         <p>
@@ -56,7 +56,7 @@ export default function Features() {
         </p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <div className="icon-placeholder"></div>
         <h3>Lorem ipsum</h3>
         <p>
@@ -68,7 +68,7 @@ export default function Features() {
         </p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <div className="icon-placeholder"></div>
         <h3>Lorem ipsum</h3>
         <p>

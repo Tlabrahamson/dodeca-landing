@@ -1,5 +1,7 @@
 import GlobalStyles from "./GlobalStyles";
 import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Components
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -9,6 +11,8 @@ import FlipSection from "./components/FlipSection";
 import SocialQuote from "./components/SocialQuote";
 
 import Footer from "./components/Footer";
+
+AOS.init();
 
 const AppWrapper = styled.main`
   width: calc(100% - 32rem);
