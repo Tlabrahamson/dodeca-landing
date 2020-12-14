@@ -12,6 +12,10 @@ const HeaderWrapper = styled.header`
     color: #fefefe;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -37,6 +41,31 @@ const HeaderWrapper = styled.header`
     position: relative;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 2;
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .line-1,
+    .line-2,
+    .line-3 {
+      background: #fefefe;
+      width: 30px;
+      height: 4px;
+    }
+    
+    ul {
+      display: none;
+    }
+  }
 `;
 
 export default function Navbar() {
@@ -44,6 +73,11 @@ export default function Navbar() {
     <HeaderWrapper>
       <h4>Dodeca</h4>
       <nav>
+        <div className="hamburger">
+          <div className="line-1"></div>
+          <div className="line-2"></div>
+          <div className="line-3"></div>
+        </div>
         <ul>
           <a href="https://tim-abrahamson.com">
             <li>Link 1</li>

@@ -40,6 +40,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 1366px) {
     h1 {
       font-size: 48px;
@@ -55,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
     }
     
     h4 {
-      font-size: 16px;
+      font-size: 24px;
     }
   }
 
