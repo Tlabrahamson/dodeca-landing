@@ -123,7 +123,7 @@ export default function Hero() {
         </defs>
       </svg>
 
-      <article>
+      <article data-aos="fade-in">
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu elit
@@ -134,6 +134,7 @@ export default function Hero() {
       </article>
       <img
         className="person"
+        data-aos="fade-in"
         src={person}
         alt="A 3D model of a person holding a phone."
       />

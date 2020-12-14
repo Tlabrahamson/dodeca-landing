@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Parallax from "react-rellax";
 // Images
 import planet from "../assets/planet.png";
 import gradient from "../assets/planet-gradient.png";
@@ -57,8 +58,8 @@ export default function Planet() {
         alt="Gradient background"
       />
       <div>
-        <h2>Lorem ipsum</h2>
-        <article>
+        <h2 data-aos="fade-right">Lorem ipsum</h2>
+        <article data-aos="fade-right">
           <h3>Lorem ipsum</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
@@ -68,7 +69,7 @@ export default function Planet() {
             sollicitudin vestibulum.
           </p>
         </article>
-        <article>
+        <article data-aos="fade-right">
           <h3>Lorem ipsum</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
@@ -79,7 +80,9 @@ export default function Planet() {
           </p>
         </article>
       </div>
-      <img className="planet" src={planet} alt="A 3D planet with trees." />
+      <Parallax percentage={0.5} speed={2}>
+        <img className="planet" src={planet} alt="A 3D planet with trees." />
+      </Parallax>
     </PlanetWrapper>
   );
 }
