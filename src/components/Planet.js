@@ -43,7 +43,7 @@ const PlanetWrapper = styled.section`
 
     article {
       p {
-        max-width: 368px;
+        width: 100%;
       }
     }
 

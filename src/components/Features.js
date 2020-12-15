@@ -8,7 +8,8 @@ const FeaturesWrapper = styled.section`
   margin-top: 16rem;
 
   article {
-    width: 368px;
+    max-width: 368px;
+    width: 100%;
 
     .icon-placeholder {
       width: 50px;
@@ -24,14 +25,18 @@ const FeaturesWrapper = styled.section`
 
   @media screen and (max-width: 1366px) {
     grid-template-columns: 1fr 1fr;
-    article {
-      width: 100%:
-    }
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     justify-items: center;
+
+    article {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
   }
 `;
 
