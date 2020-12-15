@@ -45,7 +45,7 @@ const FlipSectionWrapper = styled.section`
       flex-direction: column;
 
       p {
-        max-width: 368px;
+        width: 100%;
       }
 
       img {

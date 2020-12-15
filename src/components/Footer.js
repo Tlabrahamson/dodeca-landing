@@ -124,10 +124,6 @@ const FooterWrapper = styled.section`
         margin-top: 8rem;
       }
     }
-
-    footer {
-      padding: 1rem 2rem;
-    }
   }
 
   @media screen and (max-width: 480px) {
