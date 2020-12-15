@@ -43,6 +43,12 @@ const PlanetWrapper = styled.section`
   @media screen and (max-width: 768px) {
     flex-direction: column;
 
+    article {
+      p {
+        max-width: 368px;
+      }
+    }
+
     .gradient-background {
       bottom: -4rem;
     }

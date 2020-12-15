@@ -10,8 +10,10 @@ const CardSectionWrapper = styled.section`
   justify-items: center;
   grid-gap: 4rem;
   article {
-    width: 400px;
-    height: 500px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
     background: #ffffff;
     box-shadow: 2px 4px 12px #dfdfdf;
     border-radius: 12px;
