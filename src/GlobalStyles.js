@@ -25,6 +25,8 @@ const GlobalStyles = createGlobalStyle`
   
   h3 {
     font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
   }
   
   h4 {
@@ -33,6 +35,8 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     font-size: 16px;
+    color: #333;
+    line-height: 30px;
   }
 
   button {

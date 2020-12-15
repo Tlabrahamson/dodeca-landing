@@ -80,6 +80,10 @@ const FooterWrapper = styled.section`
     justify-content: space-between;
     align-items: center;
 
+    p {
+      color: #fefefe;
+    }
+
     svg {
       font-size: 24px;
       margin-left: 42px;
@@ -91,10 +95,9 @@ const FooterWrapper = styled.section`
     margin: 0 -8rem;
     article {
       padding: 8rem;
-      flex-direction: column;
 
       img {
-        margin-top: 8rem;
+        max-width: 400px;
       }
     }
 
@@ -106,6 +109,24 @@ const FooterWrapper = styled.section`
       input {
         margin-bottom: 2rem;
       }
+    }
+
+    footer {
+      padding: 1rem 8rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    article {
+      flex-direction: column;
+
+      img {
+        margin-top: 8rem;
+      }
+    }
+
+    footer {
+      padding: 1rem 2rem;
     }
   }
 

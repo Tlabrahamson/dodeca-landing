@@ -18,13 +18,7 @@ const FeaturesWrapper = styled.section`
     }
 
     h3 {
-      font-weight: 800;
       padding: 1rem 0;
-    }
-
-    p {
-      line-height: 30px;
-      color: #333;
     }
   }
 

@@ -20,7 +20,6 @@ const HeroWrapper = styled.section`
     margin-top: 61px;
 
     h1 {
-      font-weight: 800;
       color: #fefefe;
     }
 
@@ -32,7 +31,7 @@ const HeroWrapper = styled.section`
     }
 
     span {
-      font-weight: 700;
+      font-weight: 800;
     }
   }
 
