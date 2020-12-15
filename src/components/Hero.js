@@ -97,8 +97,8 @@ export default function Hero() {
     <HeroWrapper>
       <svg
         width="1920"
-        height="800"
-        viewBox="0 0 1920 800"
+        height="1080"
+        viewBox="0 0 1920 1080"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="hero-gradient"
@@ -116,9 +116,9 @@ export default function Hero() {
             y2="408.443"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#2A1DCA" stop-opacity="0.75" />
-            <stop offset="0.291667" stop-color="#1D4DCA" stop-opacity="0.75" />
-            <stop offset="1" stop-color="#1DCAAB" stop-opacity="0.75" />
+            <stop stopColor="#2A1DCA" stopOpacity="0.75" />
+            <stop offset="0.291667" stopColor="#1D4DCA" stopOpacity="0.75" />
+            <stop offset="1" stopColor="#1DCAAB" stopOpacity="0.75" />
           </linearGradient>
         </defs>
       </svg>

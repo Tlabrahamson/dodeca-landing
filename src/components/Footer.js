@@ -89,6 +89,7 @@ const FooterWrapper = styled.section`
   @media screen and (max-width: 1366px) {
     article {
       flex-direction: column;
+      padding: 16rem 2rem;
     }
 
     form {
@@ -103,6 +104,8 @@ const FooterWrapper = styled.section`
   }
 
   @media screen and (max-width: 480px) {
+    margin: 0 -2rem;
+
     footer {
       flex-direction: column;
 
