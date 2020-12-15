@@ -23,15 +23,8 @@ const FlipSectionWrapper = styled.section`
       line-height: 56px;
     }
 
-    h3 {
-      font-weight: 600;
-      line-height: 56px;
-    }
-
     p {
-      color: #333;
       width: 368px;
-      line-height: 30px;
     }
   }
 

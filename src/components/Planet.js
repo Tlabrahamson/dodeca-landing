@@ -24,14 +24,12 @@ const PlanetWrapper = styled.section`
   article {
     padding-bottom: 4rem;
     h3 {
-      line-height: 56px;
       padding-bottom: 1rem;
       font-weight: 600;
     }
 
     p {
       width: 368px;
-      line-height: 30px;
     }
   }
 

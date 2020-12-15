@@ -20,15 +20,7 @@ const CardSectionWrapper = styled.section`
     padding: 2rem 1rem;
 
     h3 {
-      font-weight: 500;
-      line-height: 56px;
-      color: #283533;
       padding: 1rem 0;
-    }
-
-    p {
-      line-height: 30px;
-      color: #333;
     }
   }
 
