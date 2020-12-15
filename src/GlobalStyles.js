@@ -7,11 +7,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
-
-  body {
-    overflow-x: hidden;
-
-  }
   
   h2,
   h3,

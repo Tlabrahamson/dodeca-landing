@@ -15,15 +15,16 @@ import Footer from "./components/Footer";
 AOS.init();
 
 const AppWrapper = styled.main`
-  width: calc(100% - 32rem);
-  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  padding: 0 16rem;
 
   @media screen and (max-width: 1366px) {
-    width: calc(100% - 16rem);
+    padding: 0 8rem;
   }
 
   @media screen and (max-width: 768px) {
-    width: calc(100% - 2rem);
+    padding: 0 1rem;
   }
 
   @media screen and (max-width: 480) {
