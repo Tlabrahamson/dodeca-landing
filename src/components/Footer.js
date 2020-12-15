@@ -124,6 +124,14 @@ const FooterWrapper = styled.section`
         margin-top: 8rem;
       }
     }
+
+    form {
+      button {
+        width: 89px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
   }
 
   @media screen and (max-width: 480px) {
