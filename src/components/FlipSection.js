@@ -67,6 +67,7 @@ export default function FlipSection() {
     <FlipSectionWrapper>
       <article>
         <img
+          data-aos="fade-in"
           src={conversation}
           alt="Two abstract people having a conversation."
         />
@@ -84,7 +85,11 @@ export default function FlipSection() {
       </article>
 
       <article className="reverse-article">
-        <img src={castle} alt="A castle on a floating platform." />
+        <img
+          data-aos="fade-in"
+          src={castle}
+          alt="A castle on a floating platform."
+        />
         <div data-aos="fade-right">
           <h3>Lorem Ipsum</h3>
           <h2>Lorem Ipsum</h2>
@@ -99,7 +104,7 @@ export default function FlipSection() {
       </article>
 
       <article>
-        <img src={ship} alt="A landed rocket ship." />
+        <img data-aos="fade-in" src={ship} alt="A landed rocket ship." />
         <div data-aos="fade-left">
           <h3>Lorem Ipsum</h3>
           <h2>Lorem Ipsum</h2>

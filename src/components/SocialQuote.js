@@ -45,7 +45,7 @@ export default function SocialQuote() {
   return (
     <SocialQuoteWrapper>
       <img src={gradient} alt="A teal gradient background" />
-      <article>
+      <article data-aos="zoom-in">
         <h2>"I have no clue what this is but, it's hype!"</h2>
         <h3>- Jimmy Jenkins</h3>
       </article>

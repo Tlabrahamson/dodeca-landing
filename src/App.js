@@ -9,7 +9,7 @@ import Features from "./components/Features";
 import Planet from "./components/Planet";
 import FlipSection from "./components/FlipSection";
 import SocialQuote from "./components/SocialQuote";
-
+import CardSection from "./components/CardSection";
 import Footer from "./components/Footer";
 
 AOS.init();
@@ -25,6 +25,10 @@ const AppWrapper = styled.main`
   @media screen and (max-width: 768px) {
     width: calc(100% - 2rem);
   }
+
+  @media screen and (max-width: 480) {
+    width: 100%;
+  }
 `;
 
 function App() {
@@ -38,6 +42,7 @@ function App() {
         <Planet />
         <FlipSection />
         <SocialQuote />
+        <CardSection />
         <Footer />
       </AppWrapper>
     </>
