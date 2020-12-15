@@ -28,8 +28,8 @@ const FooterWrapper = styled.section`
     }
 
     img {
-      width: 100%;
       max-width: 780px;
+      width: 100%;
     }
   }
 
@@ -48,7 +48,8 @@ const FooterWrapper = styled.section`
     }
 
     input {
-      width: 395px;
+      max-width: 395px;
+      width: 100%;
       height: 49px;
       font-size: 16px;
       border: none;
@@ -87,9 +88,14 @@ const FooterWrapper = styled.section`
   }
 
   @media screen and (max-width: 1366px) {
+    margin: 0 -8rem;
     article {
+      padding: 8rem;
       flex-direction: column;
-      padding: 16rem 2rem;
+
+      img {
+        margin-top: 8rem;
+      }
     }
 
     form {
@@ -105,6 +111,10 @@ const FooterWrapper = styled.section`
 
   @media screen and (max-width: 480px) {
     margin: 0 -2rem;
+
+    article {
+      padding: 8rem 2rem;
+    }
 
     footer {
       flex-direction: column;

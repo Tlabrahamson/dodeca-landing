@@ -39,6 +39,12 @@ const SocialQuoteWrapper = styled.section`
       width: 393px;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    article {
+      width: 100%;
+    }
+  }
 `;
 
 export default function SocialQuote() {
