@@ -82,6 +82,13 @@ const HeroWrapper = styled.section`
       h1 {
         line-height: 40px;
       }
+
+      button {
+        font-size: 16px;
+        padding: 10px;
+        width: 89px;
+        height: 40px;
+      }
     }
 
     .person {
