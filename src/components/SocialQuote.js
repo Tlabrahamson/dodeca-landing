@@ -4,7 +4,7 @@ import gradient from "../assets/teal-gradient.png";
 
 const SocialQuoteWrapper = styled.section`
   position: relative;
-  padding: 8rem 0;
+  padding: 8rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ const SocialQuoteWrapper = styled.section`
 
   article {
     position: absolute;
-    width: 1045px;
+    max-width: 1045px;
     h2 {
       padding-bottom: 1rem;
       color: #fefefe;
@@ -30,19 +30,14 @@ const SocialQuoteWrapper = styled.section`
 
   @media screen and (max-width: 1366px) {
     article {
-      width: 697px;
+      max-width: 697px;
     }
   }
 
   @media screen and (max-width: 768px) {
     article {
-      width: 393px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    article {
       width: 100%;
+      padding: 0 1rem;
     }
   }
 `;

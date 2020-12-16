@@ -35,9 +35,6 @@ const FeaturesWrapper = styled.section`
       max-width: 100%;
     }
   }
-
-  @media screen and (max-width: 480px) {
-  }
 `;
 
 export default function Features() {

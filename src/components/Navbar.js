@@ -1,3 +1,8 @@
+/* 
+  - Need to fix the nav links getting smashed before mobile breakpoint
+  - I should go ahead and make the hamburger functional...
+*/
+
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
@@ -6,6 +11,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 
   h4 {
     font-weight: 600;

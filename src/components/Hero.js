@@ -1,3 +1,8 @@
+/* 
+  - NEED TO FIX THE IMAGE OVERFLOW
+  - Maybe add an animate to the thought bubble? IDK
+*/
+
 import styled from "styled-components";
 import person from "../assets/hero-person.png";
 
@@ -55,6 +60,8 @@ const HeroWrapper = styled.section`
 
   .person {
     width: 100%;
+    max-width: 600px;
+    min-width: 400px;
   }
 
   @media screen and (max-width: 1366px) {
@@ -73,7 +80,7 @@ const HeroWrapper = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: 60px;
+    margin-top: 20px;
     flex-direction: column;
 
     article {
