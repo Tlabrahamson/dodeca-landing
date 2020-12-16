@@ -6,9 +6,9 @@ import castle from "../assets/castle.png";
 import ship from "../assets/ship.png";
 
 const FlipSectionWrapper = styled.section`
-  width: 100%;
   article {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8rem;
@@ -16,6 +16,11 @@ const FlipSectionWrapper = styled.section`
     img {
       width: 100%;
       max-width: 700px;
+      min-width: 200px;
+    }
+
+    div {
+      margin-left: 4rem;
     }
 
     h2 {
@@ -24,12 +29,17 @@ const FlipSectionWrapper = styled.section`
     }
 
     p {
-      width: 368px;
+      max-width: 368px;
     }
   }
 
   .reverse-article {
     flex-direction: row-reverse;
+
+    div {
+      margin-right: 4rem;
+      margin-left: 0;
+    }
   }
 
   @media screen and (max-width: 1366px) {
@@ -44,6 +54,10 @@ const FlipSectionWrapper = styled.section`
     article {
       flex-direction: column;
 
+      div {
+        margin: 0;
+      }
+
       p {
         width: 100%;
       }
@@ -56,6 +70,10 @@ const FlipSectionWrapper = styled.section`
 
     .reverse-article {
       flex-direction: column;
+
+      div {
+        margin: 0;
+      }
     }
   }
 `;

@@ -34,19 +34,17 @@ const AppWrapper = styled.main`
 
 function App() {
   return (
-    <>
+    <AppWrapper>
       <GlobalStyles />
-      <AppWrapper>
-        <Navbar />
-        <Hero />
-        <Features />
-        <Planet />
-        <FlipSection />
-        <SocialQuote />
-        <CardSection />
-        <Footer />
-      </AppWrapper>
-    </>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Planet />
+      <FlipSection />
+      <SocialQuote />
+      <CardSection />
+      <Footer />
+    </AppWrapper>
   );
 }
 
