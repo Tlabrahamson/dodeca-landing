@@ -1,5 +1,4 @@
 /* 
-  - NEED TO FIX THE IMAGE OVERFLOW
   - Maybe add an animate to the thought bubble? IDK
 */
 
@@ -62,6 +61,7 @@ const HeroWrapper = styled.section`
     width: 100%;
     max-width: 600px;
     min-width: 400px;
+    object-fit: contain;
   }
 
   @media screen and (max-width: 1366px) {
@@ -79,7 +79,7 @@ const HeroWrapper = styled.section`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     margin-top: 20px;
     flex-direction: column;
 
@@ -87,7 +87,7 @@ const HeroWrapper = styled.section`
       min-width: 100%;
 
       h1 {
-        line-height: 40px;
+        line-height: 56px;
       }
 
       button {
@@ -101,6 +101,14 @@ const HeroWrapper = styled.section`
     .person {
       margin-top: 60px;
       width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    article {
+      h1 {
+        line-height: 40px;
+      }
     }
   }
 `;

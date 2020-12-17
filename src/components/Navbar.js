@@ -1,5 +1,4 @@
 /* 
-  - Need to fix the nav links getting smashed before mobile breakpoint
   - I should go ahead and make the hamburger functional...
 */
 
@@ -48,7 +47,7 @@ const HeaderWrapper = styled.header`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .hamburger {
       display: flex;
       flex-direction: column;
