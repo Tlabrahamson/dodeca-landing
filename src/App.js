@@ -23,12 +23,12 @@ const AppWrapper = styled.main`
     padding: 0 8rem;
   }
 
-  @media screen and (max-width: 768px) {
-    padding: 0 1rem;
+  @media screen and (max-width: 1024px) {
+    padding: 0 2rem;
   }
 
-  @media screen and (max-width: 480) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
   }
 `;
 

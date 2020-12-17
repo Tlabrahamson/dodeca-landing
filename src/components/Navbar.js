@@ -55,7 +55,7 @@ const HeaderWrapper = styled.header`
       justify-content: space-evenly;
       z-index: 2;
       width: 50px;
-      height: 40px;
+      height: 30px;
       cursor: pointer;
     }
 
@@ -64,7 +64,7 @@ const HeaderWrapper = styled.header`
     .line-3 {
       background: #fefefe;
       width: 30px;
-      height: 4px;
+      height: 2px;
     }
     
     ul {
