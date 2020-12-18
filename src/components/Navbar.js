@@ -4,6 +4,8 @@
 
 import styled from "styled-components";
 
+import Hamburger from "./utils/Hamburger";
+
 const HeaderWrapper = styled.header`
   height: 5rem;
   width: 100%;
@@ -58,14 +60,6 @@ const HeaderWrapper = styled.header`
       height: 30px;
       cursor: pointer;
     }
-
-    .line-1,
-    .line-2,
-    .line-3 {
-      background: #fefefe;
-      width: 30px;
-      height: 2px;
-    }
     
     ul {
       display: none;
@@ -78,11 +72,7 @@ export default function Navbar() {
     <HeaderWrapper>
       <h4>Dodeca</h4>
       <nav>
-        <div className="hamburger">
-          <div className="line-1"></div>
-          <div className="line-2"></div>
-          <div className="line-3"></div>
-        </div>
+        <Hamburger />
         <ul>
           <a href="https://tim-abrahamson.com">
             <li>Link 1</li>
