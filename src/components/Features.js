@@ -25,6 +25,12 @@ const FeaturesWrapper = styled.section`
 
   @media screen and (max-width: 1366px) {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 24rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 16rem;
   }
 
   @media screen and (max-width: 768px) {

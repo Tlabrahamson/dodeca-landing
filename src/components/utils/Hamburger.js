@@ -10,6 +10,7 @@ const HamburgerWrap = styled.div`
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
+  display: none;
 
   .line-1,
   .line-2,
@@ -34,41 +35,93 @@ const HamburgerWrap = styled.div`
     transform: rotate(-45deg);
     background: #2d2d2d;
   }
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+  }
 `;
 
 const MenuWrap = styled.div`
-  nav {
-    position: absolute;
-    left: 200%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100vh;
-    width: 100vw;
-    background: #fff;
-    z-index: 0;
-    padding: 2rem;
-    transition: all 0.3s ease;
-  }
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
 
-  li {
-    list-style: none;
-    text-align: right;
+a {
+  color: #fefefe;
+  text-decoration: none;
+  margin-left: 4rem;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #2d2d2d;
   }
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 2.5rem;
-    transition: all 0.3s ease;
-    &:hover {
-      color: #4d4d4d;
+.button-link {
+  background: linear-gradient(
+    108.58deg,
+    rgba(112, 0, 255, 0.5) 0%,
+    rgba(241, 74, 214, 0.5) 100%
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  }
+}
+
+  @media screen and (max-width: 1024px) {
+    nav {
+      position: absolute;
+      left: 200%;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background: #fff;
+      z-index: 1;
+      padding: 2rem;
+      transition: all 0.3s ease;
     }
-  }
 
-  .active {
-    left: 0;
+    ul {
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+
+    li {
+      list-style: none;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2d2d2d;
+      font-size: 2.5rem;
+      transition: all 0.3s ease;
+      margin: 0;
+      &:hover {
+        color: #4d4d4d;
+      }
+
+      &:last-child {
+        color: #fefefe;
+      }
+    }
+
+    .active {
+      left: 0;
+    }
   }
 `;
 
@@ -92,21 +145,18 @@ export default function Hamburger() {
       <MenuWrap>
         <nav className={toggle ? "active" : ""}>
           <ul>
-            <li>
-              <a href="https://tim-abrahamson.com">Hero</a>
-            </li>
-            <li>
-              <a href="https://tim-abrahamson.com">Features</a>
-            </li>
-            <li>
-              <a href="https://tim-abrahamson.com">How it Works</a>
-            </li>
-            <li>
-              <a href="https://tim-abrahamson.com">Social Response</a>
-            </li>
-            <li>
-              <a href="https://tim-abrahamson.com">Sign Up</a>
-            </li>
+            <a href="https://tim-abrahamson.com">
+              <li>Link 1</li>
+            </a>
+            <a href="https://tim-abrahamson.com">
+              <li>Link 2</li>
+            </a>
+            <a href="https://tim-abrahamson.com">
+              <li>Link 3</li>
+            </a>
+            <a className="button-link" href="https://tim-abrahamson.com">
+              <li>Link 4</li>
+            </a>
           </ul>
         </nav>
       </MenuWrap>
