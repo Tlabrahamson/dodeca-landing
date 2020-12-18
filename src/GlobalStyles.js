@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body.active {
-    overflow-y: hidden;
+    overflow: hidden;
   }
   
   h2,
