@@ -20,7 +20,7 @@ const AppWrapper = styled.main`
   padding: 0 16rem;
 
   @media screen and (max-width: 1366px) {
-    padding: 0 8rem;
+    padding: 0 4rem;
   }
 
   @media screen and (max-width: 1024px) {
