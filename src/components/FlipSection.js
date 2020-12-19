@@ -50,7 +50,7 @@ const FlipSectionWrapper = styled.section`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     article {
       flex-direction: column;
 
@@ -59,7 +59,7 @@ const FlipSectionWrapper = styled.section`
       }
 
       p {
-        width: 100%;
+        max-width: 100%;
       }
 
       img {
